@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Ajax</title>
+    <style>
+        .tabel-select{
+            width:80%;
+        }
+    </style>
+</head>
+<body>
+    <h1>CRUD dengan Ajax</h1>
+    <table class="tabel-select"border="1" cellspacing="0" cellpadding="5px">
+        <thead>
+            <tr>
+                <td>No</td>
+                <td>Nama Barang</td>
+                <td>Harga Barang</td>
+                <td>Stok</td>
+                <td>Opsi</td>
+            </tr>
+        </thead>
+        <tbody class="targetData">
+
+        </tbody>
+    </table>
+    <br>
+    <br>
+
+    <table>
+        <tr>
+            <td><input type="hidden" name="id" class="id"></td>
+        </tr>
+        <tr>
+            <td>Nama Barang</td>
+            <td><input type="text" name="namabarang" class="namabarang"></td>
+        </tr>
+        <tr>
+            <td>Harga Barang</td>
+            <td><input type="number" name="hargabarang" class="hargabarang"></td>
+        </tr>
+        <tr>
+            <td>Stok Barang</td>
+            <td><input type="number" name="stokbarang" class="stokbarang"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button class="btn-tambah">Tambah</button>
+                <button class="btn-simpan" style="display: none;">Simpan</button>
+                <button class="btn-batal" style="display: none;">Batal</button>
+            </td>
+            <!-- <td><input type="text" name="stokbarang" class="stokbarang"></td> -->
+        </tr>
+    </table>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/tools.js"></script>
+</body>
+</html>
